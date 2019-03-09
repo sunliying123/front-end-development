@@ -9,7 +9,7 @@
 <body>
     <form action="">
         <h1>毕业生信息</h1>
-        <fieldset style="width:550px;height:115px;">
+        <fieldset style="width:550px;">
             <legend style="color:red;">学生信息</legend>
             姓&nbsp;&nbsp;名 <input type="text" name="name1" autofocus="autofocus" placeholder="请输入姓名">
             <span style="color:red;">*</span>
@@ -23,13 +23,19 @@
             邮&nbsp;&nbsp;箱 <input type="text" name="name4" autofocus="autofocus" placeholder="请输入邮箱地址">
             <span style="color:red">*</span>
         </fieldset>
-        <fieldset style="width:550px;height:90px;margin-top:30px;">
+        <fieldset style="width:550px;margin-top:30px;">
            <legend style="color:red;">录取情况</legend>
-           录取学校 <input type="text" name="name5" autofocus="autofocus">
+           录取学校 
+           <select>
+               <option></option>
+               <option>河北师范大学</option>
+               <option>清华大学</option>
+               <option>北京大学</option>
+           </select>
            <br>
-           入学成绩 <input type="text" name="name6" autofocus="autofocus">
+           入学成绩 <input type="number" name="name6" autofocus="autofocus">
            <br>
-           入学时间 <input type="text" name="name7" autofocus="autofocus" value=" 年/ 月/ 日">
+           入学时间 <input type="datetime-local" name="date1"/>
        </fieldset>
        <input style="margin-top:25px;" type="submit" value="提交">
     </form>
