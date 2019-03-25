@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web存储</title>
+</head>
+<body>
+    <input id="memo" style="width:300px;height:60px;" type="search" name="input" placeholder="请输入想查找的商品">
+    &nbsp;
+    <input style="width:200px;height:50px;" type="button" value="搜索" onclick="saveStorage('memo');">
+    <br>
+    最近搜索
+    <div id="msg">
+        <input style="float:right;margin-right:800px;" type="button" id="clear" value="X" name="input0" onclick="clearall();">
+    </div>
+</body>
+
+<script>
+    var input=document.getElementById("msg");
+    function saveStorage(id){
+        var data=document.getElementById(id).value;
+        var time = new Date().getTime();
+        localStorage.setItem(time, data);
+        alert("数据已保存");
+        var input1=document.createElement("button");
+        input1.style.margin="5px";
+        input1.innerHTML=data;
+        input.appendChild(input1);
+    }
+    
+    function clearall(){
+        localStorage.clear();
+        alert("是否清除全部数据？")
+        msg.innerHTML=" ";
+    }
+</script>
+</html>
