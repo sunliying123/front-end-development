@@ -61,8 +61,8 @@
         Img('canvas1','canvas2');
 
         function Clean(){
-            var w=canvas0.width;
-            var h=canvas0.height;
+            var w=canvas.width;
+            var h=canvas.height;
             var data=context.getImageData(0,0,w,h).data;
             for(var i=0,j=data.length;i<data.length;i+=4){
                 if(data[i] && data[i+1] && data[i+2] && data[i+3]){
