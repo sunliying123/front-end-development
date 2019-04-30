@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刮奖效果</title>
+    
+</head>
+<body>
+    <canvas id="canvas1" width="320" height="160" style="position:absolute;"></canvas>
+    <canvas id="canvas2" width="320" height="160" style="position:absolute;"></canvas>
+    <script>
+        function Img(canvas1,canvas2) {
+            var canvas = document.getElementById(canvas1);
+            var context = canvas.getContext("2d");
+            var img = new Image();
+            img.onload = function () {
+                context.drawImage(this, 0, 0, canvas.width, canvas.height);
+            }
+            img.src = 'snowflake.png';
+
+            var canvas0 = document.getElementById(canvas2);
+            var context2 = canvas0.getContext("2d");
+            context2.fillStyle = '#ccc';
+            context2.fillRect(0, 0, 320, 160);
+            context2.fill();
+            context2.globalCompositeOperation = "destination-out";
+            var mouse = false;
+            canvas0.addEventListener("mousedown", function (e) {
+                mouse = true;
+                var d = document.documentElement;
+                var x = (e.clientX) + d.scrollLeft - d.clientLeft;
+                var y = (e.clientY) + d.scrollTop - d.clientTop;
+                context2.fillStyle = "#fff";
+                context2.beginPath();
+                context2.arc(x, y, 20, 0, Math.PI * 2, true);
+                context2.closePath();
+                context2.fill();
+                canvas0.addEventListener("mousemove", function (e) {
+                    if (!mouse) 
+                        return false;
+                    var d = document.documentElement;
+                    var x = (e.clientX)  + d.scrollLeft - d.clientLeft;
+                    var y = (e.clientY) + d.scrollTop - d.clientTop;
+                    var z = context2.createRadialGradient(x, y, 0, x, y, 30);
+
+                    z.addColorStop(0, 'rgba(0,0,0,0.5)');
+                    z.addColorStop(1, 'rgba(255,255,255,0)');
+                    context2.fillStyle = z;
+                    context2.beginPath();
+                    context2.arc(x, y, 20, 0, Math.PI * 2, true);
+                    context2.closePath();
+                    context2.fill();
+                }, false);
+                canvas0.addEventListener("mouseup", function (e) {
+                    mouse = false;
+                }, false);
+            }, false);
+        }
+        Img('canvas1','canvas2');
+
+        function Clean(){
+            var w=canvas0.width;
+            var h=canvas0.height;
+            var data=context.getImageData(0,0,w,h).data;
+            for(var i=0,j=data.length;i<data.length;i+=4){
+                if(data[i] && data[i+1] && data[i+2] && data[i+3]){
+                    j--;
+                }
+            }
+            if(j<=w*h*0.8){
+                context.clearRect(0,0,w,h);
+            }
+        }
+        Clean();
+    </script>
+</body>
+</html>
