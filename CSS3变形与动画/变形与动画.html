@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3变形与动画</title>
+    <style>
+        .bigbox{
+            width:400px;
+            height:450px;
+        }
+        .box1{
+            width:400px;
+            height:450px;
+            border:3px solid rgb(231, 229, 229);
+            transition-duration: 1s;
+        }
+        .box2{
+            width:400px;
+            height:450px;
+            transition-duration: 1s;
+        }
+        .box3{
+            width:400px;
+            height:300px;
+            transition-duration:1s;
+            overflow:hidden;
+        }
+        .img{
+            width:100%;
+            height:auto;
+            transition: 1s ease-in-out;
+            
+        }
+        .box4{
+            width:400px;
+            transition-duration: 1s;
+            overflow:hidden;
+        }
+        .p{
+            font-size: 30px;
+            color:brown;
+            transition-duration: 1s;
+        }
+        .p1{
+            font-size: 20px;
+            color:chocolate;
+            display: none;
+            transition-duration:1s;
+        }
+        .box1:hover{
+            border:3px solid grey;
+        }
+        .box2:hover .box3{
+            width:400px;
+            height:180px;
+        }
+        .box2:hover .box3 img{
+            transform:scale(1.5);
+            box-shadow: 0px 0px 30px url("zhanqiao.jpg");
+            filter:blur(2px);
+        }
+        .box2:hover .box4{
+            width:400px;
+            height:300px;
+        }
+        .box2:hover .box4 .p1{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="box1">
+            <div class="box2">
+                <div class="box3">
+                    <img class="img" src="zhanqiao.jpg" alt="">
+                </div>
+                <div class="box4">
+                    <p class="p">HTML是最有趣的</p>
+                    <p class="p1">HTML是最有趣的HTML是最有趣的HTML是最有趣的HTML是最有趣的HTML是最有趣的</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+                
+
+                
+            
+
