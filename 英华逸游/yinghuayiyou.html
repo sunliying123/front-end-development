@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>英华逸游</title>
+    <link rel="stylesheet" href="yinghuayiyou.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--顶端-->
+    <div class="header">
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <img class="tell" src="img/tell.png" alt="">
+                    <span class="tell-num" style="margin-left:45px;">400-808-8682</span>
+                    <span class="tell-num" style="margin-left:230px">请登录&nbsp;&nbsp;|&nbsp;&nbsp;注册</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--logo部分-->
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="navbar-header">
+                <!--<button class="kuai">快速定制</button>-->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-1">
+                    <span class="sr-only">导航开关</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                <img class="navbar-brand" src="img/logo.png" alt="">
+            </div>
+            <div class="collapse navbar-collapse" id="bs-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">热门路线</a></li>
+                    <li><a href="#">签证推荐</a></li>
+                    <li><a href="#">使命愿景</a></li>
+                </ul>
+            </div>
+            <div class="button-kuai">快速定制</div>
+        </nav>
+    </div>
+    <!--轮播图-->
+    <div id="generic" class="carousel slide" data-ride="carousel">
+
+        <!-- 轮播（Carousel）项目 -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img alt="First slide" src="img/banner.jpg">
+                <div class="carousel-caption">
+                    <h1 style="position:absolute;top:-250px;">悠游古欧洲&nbsp;&nbsp;遍览德法瑞意</h1>
+                    <div class="Paris">
+                        <h4 style="position:absolute;top:-170px;font-size: 15px;">
+                            巴黎卢浮宫、塞纳河游船、凡尔赛宫
+                            <br> 少女峰、大运河游船、金色列车、西庸城堡
+                        </h4>
+                    </div>
+                    <h4 class="all">全程升级热早+1晚5星酒店</h4>
+                </div>
+            </div>
+            <div class="item">
+                <img alt="Second slide" src="img/banner2.jpg">
+            </div>
+            <div class="search">
+                <button class="btn"><img style="float:left;" src="img/position.png" alt="">目的地</button>
+                <input type="text" placeholder="&nbsp;| 日本  美国  英国  地中海">
+                <button class="btn" style="background-color: #e8420a;float:right"><img src="img/search.png" alt=""></button>
+            </div>
+        </div>
+        <!-- 轮播（Carousel）导航 -->
+        <a class="left carousel-control" href="#generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
+
+    <!--机场接送-->
+    <div class="airport">
+        <div class="row airport1">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-8" style="position: relative;">
+                <img class="img-responsive" style="height:365px;width: 100%;" src="img/Sbanner2.jpg" alt="">
+                <div class="airport-word">
+                    <h2>机场接送&nbsp;&nbsp;省钱省心</h2>
+                    <h5>
+                        提供上海、苏州、无锡各市
+                        <br> 往返机场、码头接送服务，更有包车服务
+                    </h5>
+                </div>
+            </div>
+            <div class="col-xs-2 airport-right">
+                <img src="img/car.png" alt="">
+                <span>车辆接送</span>
+                <button>查看详情</button>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+        <!--缩小后的机场接送-->
+        <div class="row small-air">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-10 car-box">
+                <img src="img/carH.png" alt="">
+                <div class="p-box">
+                    <h2 style="color: #14316d;">机场接送&nbsp;&nbsp;省心省力</h2>
+                    <h5>
+                        提供上海、苏州、无锡各市
+                        <br> 往返机场、码头接送服务，更有包车服务
+                    </h5>
+                </div>
+                <button>查看详情</button>
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+    <div class="middle"></div>
+    <!--热门线路-->
+    <div class="remen">
+        <div class="row">
+            <div class="col-xs-1" style="height: 130px;"></div>
+            <div class="col-xs-10" style="height: 130px;text-align:center;">
+                <h2>热 门 线 路</h2>
+                <h5 style="color: #000;">Popular tourist routes</h5>
+            </div>
+            <div class="col-xs-1" style="height: 130px;"></div>
+        </div>
+    </div>
+    <div class="remen-box">
+        <div class="row">
+            <div class="col-xs-1" style="height: 130px;"></div>
+            <div class="col-xs-10" style="height: 130px;">
+                <div style="padding-top:10px;">
+                    <h2 style="border-left: 2px solid #e8420a;">热 门 线 路</h2>
+                </div>
+            </div>
+            <div class="col-xs-1" style="height: 130px;"></div>
+        </div>
+    </div>
+    <!--一大堆的图片们-->
+    <div class="pictures">
+        <div class="row">
+            <div class="col-xs-1" style="height:1050px;"></div>
+            <div class="col-xs-5" style="height:1050px;">
+                <div style="height:425px;background-size:cover;background-image:url(img/hot1.jpg)"></div>
+                <div style="height: 100px;background-color:#000;color:#fff;">
+                    <p style="padding-top: 20px;padding-left:30px;">海南三亚5天4晚，纯玩、4晚红树林度假王国</p>
+                    <p style='padding-left:30px'>￥2580/人起</p>
+                </div>
+
+                <div style="margin-top:5px;height:425px;background-size:cover;background-image:url(img/hot2.jpg)"></div>
+                <div style="height: 100px;background-color:#000;color:#fff;">
+                    <p style="padding-top: 20px;padding-left:30px;">德法意瑞欧洲4过，ABCD任意路线由您挑选</p>
+                    <p style='padding-left:30px'>￥7999/人起</p>
+                </div>
+            </div>
+            <div class="col-xs-5" style="height: 1050px;">
+                <div style="margin-left:5px;background-size:cover; background-image: url(img/hot3.jpg);height:350px;position:relative;">
+                    <div style='width:100%;height:100px;background-color:#000;opacity:0.4;position:absolute;top:71%;color:#fff;'>
+                        <p style='padding-top:20px;padding-left:30px'>曼谷+芭提雅7nbsp国际五星，赠送2220大礼包，绝无自费</p>
+                        <p style='padding-left:30px'>￥2799/人起</p>
+                    </div>
+                </div>
+                <div style="margin:5px 5px;background-size:cover; background-image: url(img/hot4.jpg);height:350px;position:relative;">
+                    <div style='width:100%;height:100px;background-color:#000;opacity:0.4;position:absolute;top:71%;color:#fff;'>
+                        <p style='padding-top:20px;padding-left:30px'>日本本州游&nbsp樱花、寿司、温泉、美食</p>
+                        <p style='padding-left:30px'>￥5399/人起</p>
+                    </div>
+                </div>
+                <div style="margin:5px 5px;background-size:cover; background-image: url(img/hot5.jpg);height:350px;position:relative;">
+                    <div style='width:100%;height:100px;background-color:#000;opacity:0.4;position:absolute;top:71%;color:#fff;'>
+                        <p style='padding-top:20px;padding-left:30px'>斯亚兰卡7天6晚全景游&nbsp保证入住2晚香格里拉</p>
+                        <p style='padding-left:30px'>￥7999/人起</p>
+                    </div>
+                </div>
+            </div>
+            <div class='col-xs-1' style="height: 1050px;"></div>
+        </div>
+    </div>
+    <div class="small-pics">
+        <div class="row">
+            <div class="col-xs-1" style="height: 1050px;"></div>
+            <div class="col-xs-10" style="height: 1050px;">
+                <div style="background-image: url(img/hot1.jpg);background-size:cover; height:400px;position:relative">
+                    <div style='width:100%;height:100px;background-color:#000;opacity:0.8;position:absolute;top:75%;color:#fff;'>
+                        <p style='font-size: 26px;padding-top:10px;padding-left:10px;'>
+                            海南三亚5天4晚
+                            <br> 纯玩、4晚红树林度假王国
+                        </p>
+                        <p style='position: absolute;top:25%;left:80%'>￥2580/人起</p>
+                    </div>
+                </div>
+
+                <div style="margin-top:25px;background-image: url(img/hot2.jpg);background-size:cover; height:400px;position:relative">
+                    <div style='width:100%;height:100px;background-color:#000;opacity:0.8;position:absolute;top:75%;color:#fff;'>
+                        <p style='font-size: 26px;padding-top:10px;padding-left:10px;'>
+                            德法意瑞欧洲4过
+                            <br>ABCD任意路线由您挑选
+                        </p>
+                        <p style='position: absolute;top:25%;left:80%'>￥7999/人起</p>
+                    </div>
+                </div>
+                <div style="width: 100%;height:130px;">
+                    <button class="seen">查看更多 ></button>
+                </div>
+            </div>
+            <div class="col-xs-1" style="height: 1050px;"></div>
+        </div>
+    </div>
+    <!--签证推荐-->
+    <div class="qian">
+        <div class="row">
+            <div class="col-xs-1" style="height:210px;"></div>
+            <div class="col-xs-10" style="height:210px;">
+                <h3 style="text-align: center;padding-top:30px;">签证推荐</h3>
+                <p style="text-align: center;padding-top: 15px;">Visa recommendation</p>
+                <p style="text-align: center;padding-top: 20px;">热门：日本 马来西亚 美国 意大利 加拿大 新加坡</p>
+            </div>
+            <div class="col-xs-1" style="height: 210px;"></div>
+        </div>
+    </div>
+    <!--缩小后的签证推荐-->
+    <div class="small-qian">
+        <div class="row">
+            <div class="col-xs-1" style="height:100px;"></div>
+            <div class="col-xs-10" style="height: 100px;">
+                <div style="padding-top:10px;">
+                    <h2 style="border-left: 2px solid #e8420a;">签 证 推 荐</h2>
+                </div>
+            </div>
+            <div class="col-xs-1" style="height: 100px;"></div>
+        </div>
+    </div>
+    <!--第二堆图片-->
+    <div class="pictures-two">
+        <div class="row">
+            <div class="col-xs-1" style="height: 500px;"></div>
+            <div class="col-xs-4" style="height: 500px;">
+                <div class="pic1">
+                    <div>
+                        <p>日本旅游签证￥420/人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3" style="height: 500px;">
+                <div class="pic2">
+                    <div>
+                        <p>新加坡旅游签证￥370/人</p>
+                    </div>
+                </div>
+                <div class="pic4">
+                    <div>
+                        <p>申根旅游签证￥999/人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3" style="height: 500px;">
+                <div class="pic3">
+                    <div>
+                        <p>马来西亚旅游签证￥450/人</p>
+                    </div>
+                </div>
+                <div class="pic5">
+                    <div>
+                        <p>美国旅游签证￥1380/人</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1" style="height: 500px;"></div>
+        </div>
+    </div>
+    <!--缩小版的第二堆图片-->
+    <div class="small-pictures-two">
+        <div class="row" style="margin-top:30px;">
+            <div class="col-xs-1" style="height: 400px;"></div>
+            <div class="col-xs-4" style="height: 400px;">
+                <div class="small-pic1">
+                    <div>
+                        <p>日本旅游签证 ￥420</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6" style="height:400px;">
+                <div class="small-pic5">
+                    <div>
+                        <p>美国旅游签证 ￥1380</p>
+                    </div>
+                </div>
+                <div class="small-pic2">
+                    <div>
+                        <p>新加坡旅游签证 ￥370</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1" style="height: 400px;"></div>
+        </div>
+    </div>
+    <!--查看更多-->
+    <div class="seen1">
+        <div class="row">
+            <div class="col-xs-1" style="height: 150px;"></div>
+            <div class="col-xs-10" style="height: 150px;">
+                <button class="seen" style="margin-left: 420px;">查看更多 ></button>
+            </div>
+            <div class="col-xs-1" style="height: 150px;"></div>
+        </div>
+    </div>
+    <!--缩小后的查看更多-->
+    <div class="small-seen1">
+        <div class="row">
+            <div class="col-xs-1" style="height: 150px;"></div>
+            <div class="col-xs-10" style="height: 150px;">
+                <button class="seen">查看更多 ></button>
+            </div>
+            <div class="col-xs-1" style="height: 150px;"></div>
+        </div>
+    </div>
+    <!--第三堆图片们啊-->
+    <div class="pictures-three">
+        <div class="row">
+            <div class="col-xs-12" style="height:350px;">
+                <img style="width: 100%;height:350px;" src="img/Bbanner.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--缩小后-->
+    <div class="small-pictures-three">
+        <div class="row">
+            <div class="col-xs-12" style="height: 18px;background-color:#e1e1e1;"></div>
+        </div>
+    </div>
+
+    <!--使命与愿景-->
+    <div class="mission mission-img">
+        <div class="row">
+            <div class="col-xs-1" style="height: 270px;"></div>
+            <div class="col-xs-10" style="height: 270px;">
+                <h3 style="padding-top: 120px;text-align: center;">使命与愿景</h3>
+                <h6 style="text-align: center">让旅游回归本质，体验纯粹旅游</h6>
+            </div>
+            <div class="col-xs-1" style="height: 270px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height: 350px;"></div>
+            <div class="col-xs-4" style="height: 350px;">
+                <img class="img-responsive" style="width: 100%;height:350px;" src="img/mission1.jpg" alt="">
+            </div>
+            <div class="col-xs-6" style="height: 350px;">
+                <div class="mission-word">
+                    <h4 style="text-align: center;padding-top: 85px;">服务理念及优势</h4>
+                    <p>
+                        <span>“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方案、</span>
+                        <br> 陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体验。英华逸
+                        <br> 游在泰国、欧洲、等多个国家拥有丰富的旅游资源、同时致力于给用户提
+                        <br> <span style="margin-left: -300px;">供性价比高的产品和服务.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-1" style="height: 350px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height:470px;"></div>
+            <div class="col-xs-10" style="height: 470px;">
+                <img src="img/mission2.jpg" alt="" style="width:100%;height:470px;margin-top: 5px;">
+            </div>
+            <div class="col-xs-1" style="height:470px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height: 350px;"></div>
+            <div class="col-xs-10" style="height: 350px;">
+                <div class="mission-pic">
+                    <div class="row">
+                        <div class="col-xs-4" style="height: 350px;">
+                            <img class="three" src="img/three1.png" alt="">
+                            <p class="three-word">
+                                旅游达人精心设计、基于口碑反复打磨
+                                <br>全网最好，敢跟任何产品比
+                            </p>
+                        </div>
+                        <div class="col-xs-4" style="height: 350px;">
+                            <img class="three" src="img/three2.png" alt="">
+                            <p class="three-word">
+                                不推自费,
+                                <br>不进垃圾购物店和伪景点
+                            </p>
+                        </div>
+                        <div class="col-xs-4" style="height:350px;">
+                            <img class="three" src="img/three3.png" alt="">
+                            <p class="three-word">
+                                独立成团不散拼，
+                                <br>只跟亲朋好友一起玩，每天发团
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1" style="height: 410px;"></div>
+        </div>
+    </div>
+
+    <!--缩小后的使命与愿景-->
+    <div class="small-mission small-mission-img">
+        <div class="row">
+            <div class="col-xs-1" style="height: 100px;"></div>
+            <div class="col-xs-10" style="height: 100px;padding-top:40px;">
+                <h2 style="border-left: 2px solid #e8420a;">使命与愿景:<span style="font-size:20px;">让旅游回归本质，体验纯粹旅游</span></h2>
+            </div>
+            <div class="col-xs-1" style="height: 100px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height: 380px;"></div>
+            <div class="col-xs-10" style="height: 380px;">
+                <img style="width: 100%;height:330px;margin-top:50px;" src="img/mission1.jpg" alt="">
+            </div>
+            <div class="col-xs-1" style="height:380px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height: 310px;"></div>
+            <div class="col-xs-10" style="height: 310px">
+                <h3 style="text-align: center;margin-top:70px;">--服务理念--</h3>
+                <p style="text-align: center;font-size: 18px;">
+                    <span style="margin-top: 35px;">“英华逸游”通过重新打造旅游全程中的产品线路设计、出行交通方</span>
+                    <br>案、陪游向导服务、增值关怀项目等，为客户提供高品质的旅游体
+                    <br>验。英华逸游在泰国、欧洲、等多个国家拥有丰富的旅游资源、同
+                    <br>时致力于给用户提供性价比高的产品和服务。
+                </p>
+            </div>
+            <div class="col-xs-1" style="height: 310px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height: 320px;"></div>
+            <div class="col-xs-10" style="height: 320px;">
+                <img style="width: 100%;height:320px;" src="img/mission2.jpg" alt="">
+            </div>
+            <div class="col-xs-1" style="height: 320px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height: 130px;"></div>
+            <div class="col-xs-10" style="height: 130px;">
+                <h3 style="text-align: center;margin-top:65px;">--服务优势--</h3>
+            </div>
+            <div class="col-xs-1" style="height: 130px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height: 160px;"></div>
+            <div class="col-xs-10" style="height: 160px">
+                <img style="float:left;margin-left: 80px;margin-top:50px;" src="img/icon11.png" alt="">
+                <h4 style="float:left;margin-left: 70px;margin-top: 50px;">
+                    旅游达人精心设计、基于口碑反复打磨,
+                    <br>告别人山人海鸡肋景点。
+                    <br>全网最好，敢跟任何产品比
+                </h4>
+            </div>
+            <div class="col-xs-1" style="height: 160px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height:160px;"></div>
+            <div class="col-xs-10" style="height: 160px;">
+                <img style="float:left;margin-left: 80px;margin-top:50px;" src="img/icon22.png" alt="">
+                <h4 style="float:left;margin-left: 70px;margin-top: 50px;">
+                    不推自费，
+                    <br>不进垃圾购物店和伪景点
+                </h4>
+            </div>
+            <div class="col-xs-1" style="height: 160px;"></div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1" style="height:160px;"></div>
+            <div class="col-xs-10" style="height: 160px;">
+                <img style="float:left;margin-left: 80px;margin-top:50px;" src="img/icon33.png" alt="">
+                <h4 style="float:left;margin-left: 70px;margin-top: 50px;">
+                    独立成团不散拼，
+                    <br>只跟亲朋好友一起玩，每天发团
+                </h4>
+            </div>
+            <div class="col-xs-1" style="height: 160px;"></div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="bottom">
+        <div class="bottom1">
+            <div class="bottom-box1">
+                <span style="float:left;margin-top: 48px;margin-left:10px;color:#fff">合作伙伴</span>
+                <img src='img/xiecheng.png'>
+                <img src='img/feizhu.png'>
+                <img src='img/qunaer.png'>
+                <img src='img/tiantang.png'>
+            </div>
+            <div class="bottom-box2">
+                <p style="color:#fff">
+                    <span style="float: left;margin-left: 10px; ">热门位置</span> <span style="float: left;margin-left:12px;">韩国</span>&nbsp;日本&nbsp;菲律宾&nbsp;越南&nbsp;老挝&nbsp;柬埔寨&nbsp;泰国&nbsp;马来西亚&nbsp;新加坡&nbsp;印度尼西亚&nbsp;印度&nbsp;斯里兰卡&nbsp;土耳其&nbsp;阿联酋&nbsp;西班牙&nbsp;意大利&nbsp;希腊&nbsp;法国&nbsp;比利时&nbsp;荷兰
+                    <br><span style="float:left;margin-left: 80px;margin-top: 10px;">英国&nbsp;瑞士&nbsp;奥地利&nbsp;德国&nbsp;匈牙利&nbsp;俄罗斯&nbsp;捷克&nbsp;芬兰&nbsp;葡萄牙&nbsp;冰岛&nbsp;美国&nbsp;加拿大&nbsp;巴西&nbsp;阿根廷&nbsp;澳大利亚&nbsp;新西兰</span>
+                </p>
+            </div>
+            <div class="bottom-box3">
+                <p style="color:#fff">
+                    <span style="float: left;margin-left: 10px; ">主题服务</span> <span style="float: left;margin-left:12px;">海岛度假</span>&nbsp;历史文化&nbsp;探索冒险&nbsp;美食购物&nbsp;都市生活&nbsp;海外游学&nbsp;邮轮度假&nbsp;蜜月摄影&nbsp;亲子乐园
+                </p>
+            </div>
+            <div class="bottom-box4">
+                <p style="color:#fff">
+                    <span style="float: left;margin-left: 10px; ">友情链接</span> <span style="float: left;margin-left:12px;">马蜂窝</span>&nbsp;穷游&nbsp;booking&nbsp;苏州旅游局&nbsp;驴友网&nbsp;吾爱全球签证中心&nbsp;酒店团购&nbsp;携程旅游攻略&nbsp;天巡职航在线&nbsp;满天飞旅游网&nbsp;中国旅游网&nbsp;澳乐网&nbsp;背包兔旅游行程
+                    <br><span style="float:left;margin-left: 80px;margin-top: 10px;">出境旅游&nbsp;国际酒店&nbsp;广州旅行社&nbsp;出境旅游&nbsp;517旅行&nbsp;花生游&nbsp;家园网&nbsp;海外婚礼</span>
+                </p>
+            </div>
+            <hr style="border: 1px solid #e1e1e1;">
+            <div class="bottom-box5">
+                <p style="color:#fff;text-align:center;font-size: 20px;">
+                    苏ICP备14019690号、2014-2017&nbsp&nbsp&nbsp@苏州英华国际旅游有限公司&nbsp&nbsp版权所有
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--缩小后的底部-->
+    <div class="small-bottom">
+        <h4 style="color:#fff;text-align:center;padding-top: 105px;">
+            苏ICP备14019690号、2014-2017
+            <br>@苏州英华国际旅游有限公司&nbsp&nbsp版权所有
+            <br>技术支持&nbsp7nbsp杭州联橙科技
+        </h4>
+    </div>
+</body>
+
+</html>
